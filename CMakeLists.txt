@@ -3,5 +3,10 @@ project(EffectiveModernCpp)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
+find_package(Boost)
+
 set(SOURCE_FILES main.cpp)
 add_executable(EffectiveModernCpp ${SOURCE_FILES})
+
+set(SOURCE_FILES_ITEM01 item01.cpp)
+add_executable(item01 ${SOURCE_FILES_ITEM01})
